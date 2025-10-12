@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -159,19 +158,32 @@
     .navigation {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-top: 40px;
+      gap: 10px;
     }
 
     .arrow {
-      font-size: 2rem;
+      font-size: 1.1rem;
       cursor: pointer;
       transition: 0.3s;
       user-select: none;
-      padding: 10px;
+      padding: 12px 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
+      flex: 1;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
     }
 
     .arrow:hover {
-      transform: scale(1.2);
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
     }
 
     footer {
@@ -200,6 +212,13 @@
       .spa-image {
         height: 250px;
       }
+      
+      .arrow {
+        font-size: 1rem;
+        padding: 10px 12px;
+        min-height: 45px;
+        white-space: nowrap;
+      }
     }
 
     @media (max-width: 480px) {
@@ -212,8 +231,10 @@
       }
       
       .arrow {
-        font-size: 1.5rem;
-        padding: 5px;
+        font-size: 0.9rem;
+        padding: 8px 10px;
+        min-height: 40px;
+        white-space: nowrap;
       }
       
       .spa-image {
@@ -223,6 +244,10 @@
       .logo {
         width: 120px;
         height: 120px;
+      }
+      
+      .navigation {
+        gap: 5px;
       }
     }
 
